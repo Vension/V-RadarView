@@ -43,13 +43,13 @@ ext {
 
     publishedGroupId = 'kv.vension'
     artifact = 'radarview'
-    libraryVersion = "0.0.1"
+    libraryVersion = "0.0.2"
 
     libraryName = 'RadarView'
     libraryDescription = 'Radar Scanning Control.'
 
-    siteUrl = 'https://github.com/aminography/PrimeDatePicker'
-    gitUrl = 'https://github.com/aminography/PrimeDatePicker.git'
+    siteUrl = 'https://github.com/Vension/V-RadarView'
+    gitUrl = 'https://github.com/Vension/V-RadarView.git'
 
     developerId = 'vension'
     developerName = 'KevinHu'

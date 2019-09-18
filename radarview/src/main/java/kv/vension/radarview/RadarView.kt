@@ -66,9 +66,8 @@ class RadarView @JvmOverloads constructor(
     //保存水滴数据
     private val mRaindrops = ArrayList<Raindrop>()
 
-
     init {
-        initAttrs(context,defStyleAttr)
+        initAttrs(context,attrs)
         initPaints()
     }
 
@@ -79,27 +78,30 @@ class RadarView @JvmOverloads constructor(
      * @param context
      * @param attrs
      */
-    private fun initAttrs(context: Context, attrs: Int) {
-        val mTypedArray = context.obtainStyledAttributes(attrs, R.styleable.RadarView)
-        mCircleColor = mTypedArray.getColor(R.styleable.RadarView_kv_circleColor, DEFAULT_COLOR)
-        mCircleNum = mTypedArray.getInt(R.styleable.RadarView_kv_circleNum, mCircleNum)
-        if (mCircleNum < 1) {
-            mCircleNum = 3
+    private fun initAttrs(context: Context?, attrs: AttributeSet?) {
+        attrs?.let {
+            val mTypedArray = context!!.obtainStyledAttributes(attrs, R.styleable.RadarView)
+            mCircleColor = mTypedArray.getColor(R.styleable.RadarView_kv_circleColor, DEFAULT_COLOR)
+            mCircleNum = mTypedArray.getInt(R.styleable.RadarView_kv_circleNum, mCircleNum)
+            if (mCircleNum < 1) {
+                mCircleNum = 3
+            }
+            mSweepColor = mTypedArray.getColor(R.styleable.RadarView_kv_sweepColor, DEFAULT_COLOR)
+            mRaindropColor =
+                mTypedArray.getColor(R.styleable.RadarView_kv_raindropColor, DEFAULT_COLOR)
+            mRaindropNum = mTypedArray.getInt(R.styleable.RadarView_kv_raindropNum, mRaindropNum)
+            isShowCrossLine = mTypedArray.getBoolean(R.styleable.RadarView_kv_showCrossLine, true)
+            isShowRaindrop = mTypedArray.getBoolean(R.styleable.RadarView_kv_showRaindrop, true)
+            mSpeed = mTypedArray.getFloat(R.styleable.RadarView_kv_speed, mSpeed)
+            if (mSpeed <= 0) {
+                mSpeed = 3f
+            }
+            mFlicker = mTypedArray.getFloat(R.styleable.RadarView_kv_flicker, mFlicker)
+            if (mFlicker <= 0) {
+                mFlicker = 3f
+            }
+            mTypedArray.recycle()
         }
-        mSweepColor = mTypedArray.getColor(R.styleable.RadarView_kv_sweepColor, DEFAULT_COLOR)
-        mRaindropColor = mTypedArray.getColor(R.styleable.RadarView_kv_raindropColor, DEFAULT_COLOR)
-        mRaindropNum = mTypedArray.getInt(R.styleable.RadarView_kv_raindropNum, mRaindropNum)
-        isShowCrossLine = mTypedArray.getBoolean(R.styleable.RadarView_kv_showCrossLine, true)
-        isShowRaindrop = mTypedArray.getBoolean(R.styleable.RadarView_kv_showRaindrop, true)
-        mSpeed = mTypedArray.getFloat(R.styleable.RadarView_kv_speed, mSpeed)
-        if (mSpeed <= 0) {
-            mSpeed = 3f
-        }
-        mFlicker = mTypedArray.getFloat(R.styleable.RadarView_kv_flicker, mFlicker)
-        if (mFlicker <= 0) {
-            mFlicker = 3f
-        }
-        mTypedArray.recycle()
     }
 
     /**
@@ -137,7 +139,7 @@ class RadarView @JvmOverloads constructor(
      */
     private fun measureWidth(measureSpec: Int, defaultSize: Int): Int {
         var result:Int
-        val specMode = MeasureSpec.getMode(measureSpec)
+        val specMode = View.MeasureSpec.getMode(measureSpec)
         val specSize = MeasureSpec.getSize(measureSpec)
 
         if (specMode == MeasureSpec.EXACTLY) {

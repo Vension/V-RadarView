@@ -11,12 +11,12 @@
         android:id="@+id/radar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:kv_circleColor="#565cd6"
+        android:layout_margin="20dp"
+        app:kv_circleColor="#FF8800"
         app:kv_circleNum="4"
         app:kv_flicker="3"
         app:kv_speed="5"
-        app:kv_sweepColor="#565cd6"
+        app:kv_sweepColor="#009944"
         app:kv_showCrossLine="true"
         app:kv_raindropNum="4"/>
 
