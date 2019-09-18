@@ -38,6 +38,7 @@
 | kv_flicker              | 水滴显示和消失的速度 |
 
 ## update
+* **V_0.0.2**: <fix bug>
 * **V_0.0.1**: <初始化版本>
 
 ## License

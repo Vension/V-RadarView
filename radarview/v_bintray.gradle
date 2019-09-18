@@ -73,6 +73,6 @@ bintray {
 
 /**
  * #!/usr/bin/env bash
- * win:gradlew clean v_install bintrayUpload
- * mac:./gradlew clean v_install bintrayUpload
+ * win:gradlew clean install bintrayUpload
+ * mac:./gradlew clean install bintrayUpload
  */
