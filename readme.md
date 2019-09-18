@@ -2,9 +2,9 @@
 * support androidX and Kotlin
 
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Arsenal](https://img.shields.io/badge/Arsenal%20-%20VisualizerView-4cae4c.svg)](https://android-arsenal.com/details/1/6001)
+[![Arsenal](https://img.shields.io/badge/Arsenal%20-%20RadarView-4cae4c.svg)](https://android-arsenal.com/details/1/6001)
 [![JCenter](https://api.bintray.com/packages/vension/maven/RadarView/images/download.svg)](https://bintray.com/vension/maven/RadarView/_latestVersion)
-[![MinSdk](https://img.shields.io/badge/%20MinSdk%20-%2019+%2B%20-f0ad4e.svg)](https://android-arsenal.com/api?level=19)
+[![MinSdk](https://img.shields.io/badge/%20MinSdk%20-%2019%2B%20-f0ad4e.svg)](https://android-arsenal.com/api?level=19)
 [![Author](https://img.shields.io/badge/Author-Vension-orange.svg?style=flat-square)](https://img.shields.io/badge/Author-Vension-orange.svg?style=flat-square)
 
 [感谢原作者（Java版本）](https://github.com/donkingliang/RadarView)
