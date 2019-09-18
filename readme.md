@@ -1,11 +1,11 @@
-# V-RadarView - Android自定义View 雷达扫描效果。可以根据自己的需求配置View的主题颜色、扫描颜色、扫描速度、圆圈数量、是否显示水滴等。
-* support androidX and Kotlin
-
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Arsenal](https://img.shields.io/badge/Arsenal%20-%20RadarView-4cae4c.svg)](https://android-arsenal.com/details/1/6001)
 [![JCenter](https://api.bintray.com/packages/vension/maven/RadarView/images/download.svg)](https://bintray.com/vension/maven/RadarView/_latestVersion)
 [![MinSdk](https://img.shields.io/badge/%20MinSdk%20-%2019%2B%20-f0ad4e.svg)](https://android-arsenal.com/api?level=19)
 [![Author](https://img.shields.io/badge/Author-Vension-orange.svg?style=flat-square)](https://img.shields.io/badge/Author-Vension-orange.svg?style=flat-square)
+
+# V-RadarView - Android自定义View 雷达扫描效果。可以根据自己的需求配置View的主题颜色、扫描颜色、扫描速度、圆圈数量、是否显示水滴等。
+* support androidX and Kotlin
 
 [感谢原作者（Java版本）](https://github.com/donkingliang/RadarView)
 
